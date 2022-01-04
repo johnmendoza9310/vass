@@ -31,7 +31,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/theme/global.scss",
+              "src/theme/variables.scss"
             ],
             "scripts": []
           },
@@ -99,7 +100,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/theme/global.scss",
+              "src/theme/variables.scss"
             ],
             "scripts": []
           }
