@@ -17,7 +17,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     
   ],
   exports:[
-    NavbarComponent
+    NavbarComponent,
+    LandingFormComponent
   ]
 })
 export class ComponentsModule { }
