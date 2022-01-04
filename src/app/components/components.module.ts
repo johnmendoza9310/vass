@@ -3,13 +3,15 @@ import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
 import { LandingFormComponent } from './landing-form/landing-form.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 
 @NgModule({
   declarations: [
     LandingFormComponent,
-    NavbarComponent
+    NavbarComponent,
+    FooterComponent
   ],
   imports: [
     CommonModule,
@@ -18,7 +20,8 @@ import { NavbarComponent } from './navbar/navbar.component';
   ],
   exports:[
     NavbarComponent,
-    LandingFormComponent
+    LandingFormComponent,
+    FooterComponent
   ]
 })
 export class ComponentsModule { }
