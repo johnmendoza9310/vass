@@ -1,0 +1,154 @@
+:host {
+  * {
+    margin: 0px;
+    padding: 0px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "Hk-guise-medium";
+  }
+
+  font-size: 12px;
+  .content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgb(37, 37, 37);
+    color: #ffffff;
+    padding-bottom: 2rem;
+
+    .horizontal-line {
+      height: 2px;
+      width: 100%;
+      border-bottom: 1.4px solid #ffffff;
+      margin-bottom: 2rem;
+    }
+
+    #line{
+        margin-top: 2rem;
+    }
+
+    .complex,
+    .business {
+      width: 20%;
+
+      .text{
+        width: 30%;
+      }
+
+      img{
+          margin-left: 4px;
+      }
+      
+
+     
+      h1{
+          font-size: 12px;
+          font-family: 'Hk-guise-bold';
+          text-align: right;
+          
+      }
+    }
+
+    .business{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding-right: 5rem;
+
+    }
+
+    .complex{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: initial;
+        padding-left: 40px;
+
+        img{
+
+            width: 25%;
+        }
+    }
+    .sitemap-vass,
+    .sitemap-talent {
+      width: 30%;
+    }
+
+    th {
+      padding: 0 0px 20px;
+    }
+
+    li {
+      list-style: none;
+    }
+    .sitemap-vass {
+    }
+    .sitemap-talent {
+    }
+  }
+
+
+  .copyright,.logos{
+    width: 25%;
+    
+    h6{
+        font-size: 10px;
+    }
+  }
+
+  .logos, .copyright, .policies{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .policies{
+      width: 50%;
+
+      .list{
+
+        li{
+            display: inline;
+            padding-left: 3px;
+            padding-right: 3px;
+
+            a{
+                color: #ffffff;
+                text-decoration: none;
+            }
+            &:hover{
+
+                text-decoration: underline;
+
+
+            }
+
+            span{
+
+                margin-left: 3px;
+            }
+        }
+
+
+      }
+  }
+
+
+  .logos{
+
+    button{
+
+        background-color: transparent;
+        border-radius: 50%;
+        border: none;
+        width: 20px;
+        height: 20px;
+        color: #ffffff;
+    }
+  }
+}

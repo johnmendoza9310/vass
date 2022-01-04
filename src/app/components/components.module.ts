@@ -4,6 +4,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { LandingFormComponent } from './landing-form/landing-form.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
+import { HeadComponent } from './head/head.component';
+import { BodyComponent } from './body/body.component';
 
 
 
@@ -11,7 +13,9 @@ import { FooterComponent } from './footer/footer.component';
   declarations: [
     LandingFormComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    HeadComponent,
+    BodyComponent
   ],
   imports: [
     CommonModule,
@@ -21,7 +25,9 @@ import { FooterComponent } from './footer/footer.component';
   exports:[
     NavbarComponent,
     LandingFormComponent,
-    FooterComponent
+    FooterComponent,
+    BodyComponent,
+    HeadComponent
   ]
 })
 export class ComponentsModule { }
