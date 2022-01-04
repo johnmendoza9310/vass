@@ -32,7 +32,8 @@
             ],
             "styles": [
               "src/theme/global.scss",
-              "src/theme/variables.scss"
+              "src/theme/variables.scss",
+              "src/theme/hk-guise.scss"
             ],
             "scripts": []
           },
@@ -101,7 +102,8 @@
             ],
             "styles": [
               "src/theme/global.scss",
-              "src/theme/variables.scss"
+              "src/theme/variables.scss",
+              "src/theme/hk-guise.scss"
             ],
             "scripts": []
           }
