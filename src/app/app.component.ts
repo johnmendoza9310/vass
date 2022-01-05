@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'vass';
+
+
+  option =[
+    'APP','BANCA', 'EU&E','INDUSTRIA','SEGUROS','TELCO & MEDIA'
+  ]
+
+
+  
 }

@@ -1,4 +1,18 @@
-<nav class="navbar navbar-expand-lg navbar-dark navbar-toggleable-md" id="navbar">
+<ng-container *ngIf="optionsNormal===true || optionsNormal===false && optionsNormal!=null">
+  <div class="contentOptions" [ngClass]="options ?  'options': 'no-active' ">
+
+    <div class="list-options" *ngFor="let item of option">
+      <h6>{{item}}</h6>
+    </div>
+  </div>
+</ng-container>
+
+<!-- <div *ngIf="optionsNormal===null">
+  <div #Countries class="normal"></div>
+</div> -->
+
+
+<nav class="navbar navbar-expand-xxl navbar-dark" id="navbar" >
   <div class="container-fluid">
     <img src="../../../assets/img/logo-vass-blanco.png" alt="">
 
@@ -12,9 +26,13 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav ">
+
+
+
+        
         <a class="nav-link active"href="#">Casos de éxito</a>
 
-        <li class="nav-item dropdown ">
+        <li class="nav-item dropdown " (click)="showOptions()">
           <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown">
             Mercados
           </a>
@@ -25,7 +43,7 @@
           </ul>
         </li>
 
-        <li class="nav-item dropdown ">
+        <li class="nav-item dropdown " (click)="showOptions()">
           <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown">
             Paises
           </a>
@@ -36,7 +54,7 @@
           </ul>
         </li>
 
-        <li class="nav-item dropdown ">
+        <li class="nav-item dropdown " (click)="showOptions()">
           <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown">
             Somos VASS
           </a>
@@ -47,7 +65,7 @@
           </ul>
         </li>
 
-        <li class="nav-item dropdown ">
+        <li class="nav-item dropdown" (click)="showOptions()">
           <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown">
             Cómo lo hacemos
           </a>

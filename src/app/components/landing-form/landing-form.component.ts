@@ -11,9 +11,14 @@ export class LandingFormComponent implements OnInit {
 
   public userForm: FormGroup
 
-  constructor( private formBuilder: FormBuilder) { }
+  constructor( private formBuilder: FormBuilder) {
+
+    this.createForm();
+   }
 
   ngOnInit(): void {
+
+    
   }
 
 
@@ -21,16 +26,48 @@ export class LandingFormComponent implements OnInit {
 
     this.userForm = this.formBuilder.group({
 
-      fullName: ['', [Validators.minLength(6), Validators.maxLength(50)]],
+      fullName: ['', [Validators.required, Validators.maxLength(50)]],
       email: ['',   [Validators.required, Validators.pattern('[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$'), Validators.minLength(3)]],
-      workplace: ['', [Validators.minLength(3)]],
-      country: ['', Validators.required],
-      number: ['', Validators.minLength(5)],
-      message: ['', Validators.minLength(3)]
+      workplace: ['', [Validators.required]],
+      country: ['', ],
+      number: [''],
+      message: ['']
   },
 
   { updateOn: 'submit' }
     );
 }
+
+sendForm(){
+
+
+ if (this.userForm.invalid) {
+
+  console.log('invalido');
+
+
+  return Object.values(this.userForm.controls).forEach(
+    control=>{
+
+      if (control instanceof FormGroup) {
+        Object.values(control.controls).forEach(  control=>{ control.markAllAsTouched()})
+        
+      }else{
+        control.markAsTouched();
+      }
+    }
+  )
+  
+   
+ }
+  
+
+
+}
+
+
+hasError(form: string, control: string) {
+  return this[form].get(control).invalid && (this[form].get(control).dirty || this[form].get(control).touched);
+ }
 
 }

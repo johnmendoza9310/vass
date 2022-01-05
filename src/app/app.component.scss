@@ -1,11 +1,8 @@
 
-:host{
-
-
 app-navbar{
-
-    position: absolute;
+    position: fixed;
     width: 100%;
+    z-index: 2;
 
     
 }
@@ -16,15 +13,13 @@ app-side-container{
     right: 0;
     height: 100vh;
     width: 90px;
+    
 
 }
 
 
 
 
-
-
-}
 
 
 

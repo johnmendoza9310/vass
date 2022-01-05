@@ -1,58 +1,54 @@
-<form>
-
+<form [formGroup]="userForm" (ngSubmit)="sendForm()" >
   <div class="content-left">
-
     <div class="input">
-      <input type="text" placeholder="Nombre y apellidos" />
+      <input
+        formControlName="fullName"
+        type="text"
+        placeholder="Nombre y apellidos"
+      />
+      <small class="input-error" *ngIf="hasError('userForm', 'fullName')">
+        El campo es obligatorio
+      </small>
     </div>
 
     <div class="input">
-      <input type="email" placeholder="Email" />
+      <input 
+        formControlName="email"
+        type="email" 
+        placeholder="Email" />
+        <small class="input-error" *ngIf="hasError('userForm', 'email')">
+          El campo es obligatorio
+        </small>
     </div>
 
     <div class="input">
-      <input type="text" placeholder="Empresa / Organismo" />
+      <input 
+        formControlName="workplace"
+        type="text" 
+        placeholder="Empresa / Organismo" />
+        <small class="input-error" *ngIf="hasError('userForm', 'workplace')">
+          El campo es obligatorio
+        </small>
     </div>
 
     <div class="input">
       <input type="text" placeholder="Pais" />
     </div>
-
   </div>
 
-
   <div class="content-right">
-
     <div class="input">
       <input type="tel" placeholder="Teléfono" />
     </div>
 
     <div class="input">
-
       <label for="">Mensaje</label>
 
-      <textarea
-        class="form-control"
-        id="message"
-        type="text"
-      ></textarea>
+      <textarea class="form-control" id="message" type="text"></textarea>
     </div>
 
     <div class="button">
-      <button >Enviar</button>
-
-
+      <button type="submit">Enviar</button>
     </div>
-
-
   </div>
-
-
-
-
-
-
-
-
-
 </form>
