@@ -1,4 +1,4 @@
-:host {
+
   * {
     margin: 0px;
     padding: 0px;
@@ -16,19 +16,18 @@
 
     .content-left,.content-right{
 
-        margin-left: 2rem;
-        width: 40%;
+        // margin-left: 2rem;
+        // width: 40%;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-
         
     }
 
     .content-right{
 
-      margin-left: 6rem;
-      width: 30%;
+      // margin-left: 6rem;
+      // width: 30%;
     }
 
 
@@ -46,6 +45,7 @@
         outline-width: 0;
         border-bottom: 1px solid #6d6d6d;
         width: 100%;
+        background-color: #000000;
 
         &::placeholder {
           color: #ffffff;
@@ -54,6 +54,8 @@
         caret-color: #ffffff;
         color: #ffffff;
       }
+
+
 
       label{
           color: #ffffff;
@@ -97,4 +99,27 @@
   textarea {
     background-color: #000000;
   }
-}
+
+
+  @media screen and (min-width:320px){
+
+    .content-left,.content-right{
+
+      width: 100%;
+      padding: 0 50px;
+    }
+
+
+  }
+
+
+  @media screen and (min-width:768px){
+
+    .content-left,.content-right{
+
+      padding: 0 150px;
+    }
+
+
+  }
+

@@ -6,6 +6,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeadComponent } from './head/head.component';
 import { BodyComponent } from './body/body.component';
+import { SideContainerComponent } from './side-container/side-container.component';
 
 
 
@@ -15,7 +16,8 @@ import { BodyComponent } from './body/body.component';
     NavbarComponent,
     FooterComponent,
     HeadComponent,
-    BodyComponent
+    BodyComponent,
+    SideContainerComponent
   ],
   imports: [
     CommonModule,
@@ -27,7 +29,8 @@ import { BodyComponent } from './body/body.component';
     LandingFormComponent,
     FooterComponent,
     BodyComponent,
-    HeadComponent
+    HeadComponent,
+    SideContainerComponent
   ]
 })
 export class ComponentsModule { }

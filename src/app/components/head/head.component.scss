@@ -1,9 +1,24 @@
-.head{
-    width: 100%;
-    height: auto;
 
-    img{
-        height: 700px;
-        width: 100%;
+
+// .head{
+//     width: 100%;
+//     height: auto;
+
+//     img{
+//         height: 700px;
+//         width: 100%;
+//     }
+// }
+
+
+@media screen and (min-width:320px){
+
+    .head{
+
+        height: 400px;
+        background-image:url(../../../assets/img/background-image.jpg);
+        background-position: center;
     }
 }
+
+
