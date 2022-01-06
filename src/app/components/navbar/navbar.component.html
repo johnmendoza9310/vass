@@ -1,39 +1,46 @@
-<ng-container *ngIf="optionsNormal===true || optionsNormal===false && optionsNormal!=null">
-  <div class="contentOptions" [ngClass]="options ?  'options': 'no-active' ">
-
+<ng-container
+  *ngIf="
+    optionsNormal === true || (optionsNormal === false && optionsNormal != null)
+  "
+>
+  <div class="contentOptions" [ngClass]="options ? 'options' : 'no-active'">
     <div class="list-options" *ngFor="let item of option">
-      <h6>{{item}}</h6>
+      <h6>{{ item }}</h6>
     </div>
   </div>
 </ng-container>
 
-<!-- <div *ngIf="optionsNormal===null">
-  <div #Countries class="normal"></div>
-</div> -->
-
-
-<nav class="navbar navbar-expand-xxl navbar-dark" id="navbar" >
+<nav class="navbar navbar-expand-xxl navbar-dark" id="navbar">
   <div class="container-fluid">
-    <img src="../../../assets/img/logo-vass-blanco.png" alt="">
+    <img src="../../../assets/img/logo-vass-blanco.png" alt="" />
 
     <button class="icon-mobile">
-      <i class="fas fa-search"></i>
+      <i class="fas fa-search" style="width: 20; height: 20"></i>
     </button>
 
-
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <button
+      class="navbar-toggler navbar-toggler-right"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav ">
+      <div class="navbar-nav">
+        <a class="nav-link active" href="#">Casos de éxito</a>
 
-
-
-        
-        <a class="nav-link active"href="#">Casos de éxito</a>
-
-        <li class="nav-item dropdown " (click)="showOptions()">
-          <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown">
+        <li class="nav-item dropdown" (click)="showOptions()">
+          <a
+            class="nav-link dropdown-toggle active"
+            href="#"
+            id="navbarDropdownMenuLink"
+            role="button"
+            data-bs-toggle="dropdown"
+          >
             Mercados
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -43,8 +50,14 @@
           </ul>
         </li>
 
-        <li class="nav-item dropdown " (click)="showOptions()">
-          <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown">
+        <li class="nav-item dropdown" (click)="showOptions()">
+          <a
+            class="nav-link dropdown-toggle active"
+            href="#"
+            id="navbarDropdownMenuLink"
+            role="button"
+            data-bs-toggle="dropdown"
+          >
             Paises
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -54,8 +67,14 @@
           </ul>
         </li>
 
-        <li class="nav-item dropdown " (click)="showOptions()">
-          <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown">
+        <li class="nav-item dropdown" (click)="showOptions()">
+          <a
+            class="nav-link dropdown-toggle active"
+            href="#"
+            id="navbarDropdownMenuLink"
+            role="button"
+            data-bs-toggle="dropdown"
+          >
             Somos VASS
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -66,7 +85,13 @@
         </li>
 
         <li class="nav-item dropdown" (click)="showOptions()">
-          <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown">
+          <a
+            class="nav-link dropdown-toggle active"
+            href="#"
+            id="navbarDropdownMenuLink"
+            role="button"
+            data-bs-toggle="dropdown"
+          >
             Cómo lo hacemos
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -76,28 +101,21 @@
           </ul>
         </li>
 
-
         <a class="nav-link active" href="#">Insights</a>
 
         <a class="nav-link active" href="#">Noticias</a>
         <a class="nav-link active" href="#">VASS Research</a>
         <a class="nav-link active" href="#">EN</a>
+      </div>
 
-
+      <div class="talent">
         <button class="icon">
           <i class="fas fa-search"></i>
         </button>
-
-        <div class="talent">
-          <a class="nav-link active" id="talent" href="#">Talento</a>
-        </div>
-
-
-        
-
-
+        <a class="nav-link active" id="talent" href="#" style="color: white"
+          >Talento</a
+        >
       </div>
     </div>
   </div>
 </nav>
-

@@ -10,7 +10,7 @@ export class AppComponent {
 
 
   option =[
-    'APP','BANCA', 'EU&E','INDUSTRIA','SEGUROS','TELCO & MEDIA'
+    'Chile','Colombia', 'México','Perú','Reino Unido','Benelux'
   ]
 
 

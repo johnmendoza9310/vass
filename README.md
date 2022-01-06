@@ -1,3 +1,19 @@
+
+# Otros
+
+De lo solicitado en pruebas-tecnicas.pdf solo omití la transparencia dinámica del navbar y el cambio de color dinámico de la linea vertical blanca (por cuestiones de tiempo)
+
+Este proyecto tiene implementado Boostrap 5 y Fontawesome
+
+No se necesitan instalaciones necesarias en el proyecto aparte de node_modules ejecutando npm install
+
+la version  node usada es la v14.18.1
+
+EL responsive design sirve a partir de 320px según lo solicitado en la prueba
+
+los estilos de fuente se encuentran localmente en el archivo hk-guise-scss
+
+
 # Vass
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.4.

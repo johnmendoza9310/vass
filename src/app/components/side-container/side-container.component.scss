@@ -1,4 +1,11 @@
-:host{
-    border-left: 1px solid #ffffff;
-    
+:host {
+  border-left: 1px solid var(--secondary);
+
+  @media screen and (min-width: 320px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1400px) {
+    display: initial;
+  }
 }

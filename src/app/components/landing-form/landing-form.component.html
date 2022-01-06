@@ -1,4 +1,4 @@
-<form [formGroup]="userForm" (ngSubmit)="sendForm()" >
+<form [formGroup]="userForm" (ngSubmit)="sendForm()">
   <div class="content-left">
     <div class="input">
       <input
@@ -12,23 +12,21 @@
     </div>
 
     <div class="input">
-      <input 
-        formControlName="email"
-        type="email" 
-        placeholder="Email" />
-        <small class="input-error" *ngIf="hasError('userForm', 'email')">
-          El campo es obligatorio
-        </small>
+      <input formControlName="email" type="email" placeholder="Email" />
+      <small class="input-error" *ngIf="hasError('userForm', 'email')">
+        El campo es obligatorio
+      </small>
     </div>
 
     <div class="input">
-      <input 
+      <input
         formControlName="workplace"
-        type="text" 
-        placeholder="Empresa / Organismo" />
-        <small class="input-error" *ngIf="hasError('userForm', 'workplace')">
-          El campo es obligatorio
-        </small>
+        type="text"
+        placeholder="Empresa / Organismo"
+      />
+      <small class="input-error" *ngIf="hasError('userForm', 'workplace')">
+        El campo es obligatorio
+      </small>
     </div>
 
     <div class="input">
