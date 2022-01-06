@@ -1,7 +1,7 @@
 
 # Otros
 
-De lo solicitado en pruebas-tecnicas.pdf solo omití la transparencia dinámica del navbar y el cambio de color dinámico de la linea vertical blanca (por cuestiones de tiempo)
+De lo solicitado en pruebas-tecnicas.pdf solo omití la transparencia dinámica del navbar y el cambio de color dinámico de la linea vertical blanca (por cuestiones de tiempo).
 
 Este proyecto tiene implementado Boostrap 5 y Fontawesome
 
