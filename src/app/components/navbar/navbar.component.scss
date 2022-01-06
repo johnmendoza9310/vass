@@ -8,7 +8,7 @@
 
 @media screen and (min-width: 320px) {
   .navbar {
-    background-color: #000000;
+    background-color: var(--primary);
   }
 
   .icon {
@@ -18,149 +18,146 @@
   .icon-mobile {
     background-color: transparent;
     border: none;
-    color: #ffffff;
+    color: var(--secondary);
     margin-left: 40%;
   }
 
-  @media screen and (min-width: 768px) {
-    .icon-mobile {
-      margin-left: 80%;
-    }
+  .contentOptions {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .icon-mobile {
+    margin-left: 80%;
+  }
+}
+
+@media screen and (min-width: 450px) {
+  .icon-mobile {
+    margin-left: 60%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .icon-mobile {
+    margin-left: 70%;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .icon-mobile {
+    display: none;
   }
 
-  @media screen and (min-width: 450px) {
-    .icon-mobile {
-      margin-left: 60%;
-    }
+  .icon {
+    display: initial;
   }
 
-  @media screen and (min-width: 1400px) {
-    .icon-mobile {
-      display: none;
+  .collapse {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    a {
+      font-size: 12px;
+      white-space: nowrap;
     }
 
-    .collapse {
+    .talent {
+      width: 30%;
+
       display: flex;
       flex-direction: row;
       justify-content: flex-end;
+      align-content: flex-end;
 
       a {
-        font-size: 12px;
-        white-space: nowrap;
-      }
-
-      .talent {
-        width: 20%;
-
-        display: flex;
-        justify-content: flex-end;
-        padding-right: 10x;
-      }
-
-      button {
-        background-color: transparent;
-        border: none;
-        color: #ffffff;
-        margin-right: 40px;
+        color: var(--secondary);
       }
     }
 
-    .options {
-      z-index: 1;
-      width: 100%;
-      height: 120px;
-      background-color: #000000;
-      position: absolute;
-      animation-name: options;
-      animation-duration: 0.4s;
+    button {
+      background-color: transparent;
+      border: none;
+      color: var(--secondary);
+      margin-right: 40px;
     }
+  }
 
-    @keyframes options {
-      0% {
-        top: -120px;
-      }
+  .options {
+    z-index: 1;
+    width: 100%;
+    height: 120px;
+    background-color: var(--primary);
+    position: absolute;
+    animation-name: options;
+    animation-duration: 0.4s;
+  }
 
-      50% {
-        top: 0px;
-      }
-    }
-
-    // .normal {
-    //   z-index: 1;
-    //   width: 100%;
-    //   height: 120px;
-    //   background-color: #000000;
-    //   position: absolute;
-    //   top: -120px;
-    // }
-
-    .no-active {
-      z-index: 1;
-      width: 100%;
-      height: 120px;
-      background-color: #000000;
-      position: absolute;
+  @keyframes options {
+    0% {
       top: -120px;
-
-      animation-name: no-active;
-      animation-duration: 0.4s;
     }
 
-    @keyframes no-active {
-      from {
-        top: 0px;
-      }
-
-      to {
-        top: -120px;
-      }
+    50% {
+      top: 0px;
     }
   }
 
-.contentOptions{
+  .no-active {
+    z-index: 1;
+    width: 100%;
+    height: 120px;
+    background-color: var(--primary);
+    position: absolute;
+    top: -120px;
 
-  display: flex;
-  flex-direction: row;
-  justify-content:space-around;
-  align-items: center;
-
-  :last-child{
-    border-right: none;
+    animation-name: no-active;
+    animation-duration: 0.4s;
   }
-  
-  
-}
-  .list-options{
 
+  @keyframes no-active {
+    from {
+      top: 0px;
+    }
+
+    to {
+      top: -120px;
+    }
+  }
+
+  .contentOptions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    :last-child {
+      border-right: none;
+    }
+  }
+  .list-options {
     width: auto;
     height: 100%;
     padding-right: 5%;
-    border-right: 1px solid #ffffff;
-    color: #ffffff;
+    border-right: 1px solid var(--secondary);
+    color: var(--secondary);
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
 
-
-
-    
-
-    h6{
-
-      font-family: 'Hk-guise-regular';
+    h6 {
+      font-family: "Hk-guise-regular";
       margin-right: 10%;
     }
-
-
   }
 
-  ul{
+  ul {
     background-color: transparent;
     border: none;
-    li{
-
+    li {
       display: none;
-      
     }
   }
 }
